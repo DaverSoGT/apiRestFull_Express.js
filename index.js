@@ -17,6 +17,19 @@ app.get('/products', (req, res) => {
   })
 })
 
+app.get('/categories', (req, res) => {
+  res.json([
+    {
+      name: 'Home',
+      apartment: 'Beds'
+    },
+    {
+      name: 'Tech',
+      apartment: 'PC'
+    }
+  ])
+})
+
 app.listen(port, () => {
   console.log('Mi port ' + port)
 })
